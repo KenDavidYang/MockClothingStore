@@ -38,7 +38,11 @@ body {
     font-size: 20px;
     outline: none;
 }
-.nav-mid div:hover {
+.nav-mid a {
+    text-decoration: none;
+    color: black;
+}
+.nav-mid a:hover {
     text-decoration: underline;
     cursor: pointer;
 }

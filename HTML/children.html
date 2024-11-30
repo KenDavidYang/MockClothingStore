@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/catalogue.css">
 
     <title>Clothing Store</title>
 </head>
@@ -13,9 +14,9 @@
             <img src="../image/logo.png" alt="logo">
         </a>
         <div class="nav-mid">
-            <div>Men</div>
-            <div>Women</div>
-            <div>Children</div>
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="">Children</a>
             <search>
                 <input type="text" placeholder="Search">
             </search>
@@ -39,5 +40,28 @@
 
         </div>
     </div>
+
+    <div class="carousel">
+        <button class="prev" onClick="moveCarousel(-1)">&lt;</button>
+        <div class="carousel-images">
+            <img src="../image/carousel-children1.png" alt="childrens clothing">
+            <img src="../image/carousel-children2.png" alt="childrens clothing">
+            <img src="../image/carousel-children3.png" alt="childrens clothing">
+            <img src="../image/carousel-children4.png" alt="childrens clothing">
+            <img src="../image/carousel-children5.png" alt="childrens clothing">
+        </div>
+        <button class="next" onclick="moveCarousel(1)">&gt;</button>
+
+    </div>
+
+    <div class="carousel-indicators">
+        <div class="indicator active" data-index="0" ></div>
+        <div class="indicator" data-index="1"></div>
+        <div class="indicator" data-index="2"></div>
+        <div class="indicator" data-index="3"></div>
+        <div class="indicator" data-index="4"></div>
+    </div>
+
+    <script src="../Javascript/catalogue.js"></script>
 </body>
 </html>

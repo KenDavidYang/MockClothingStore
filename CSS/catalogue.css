@@ -1,3 +1,6 @@
+body {
+    font-family: calibri;
+}
 .carousel {
     position: relative;
     width: 100%;
@@ -62,4 +65,58 @@ button.next {
 
 .indicator.active {
     background-color: white;
+}
+
+.catalogue-container {
+    display: flex;
+    margin: 50px auto;
+    gap: 3vw;
+    position: relative;
+    justify-content: center;
+    min-width: 80vw;
+}
+
+.catalogue-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.catalogue-item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.catalogue-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.catalogue-item div {
+    margin-bottom: 20px;
+    font-size: 2vw;
+}
+
+/* big screen */
+@media (min-width: 1200px) {
+    .catalogue-container {
+        width: 60vw;
+    }
+
+    .catalogue-item {
+        font-size: 18px;
+    }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    .catalogue-container {
+        flex-direction: column;
+        width: 95vw; 
+    }
+
+    .catalogue-item {
+        font-size: 12px;
+    }
 }
